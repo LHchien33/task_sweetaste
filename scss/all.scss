@@ -5,7 +5,7 @@
 }
 
 body{
-    font-family: "Microsoft JhengHei", "微軟正黑體", serif;
+    font-family: "PingFang TC", "微軟正黑體", serif;
 }
 
 img{
@@ -195,6 +195,7 @@ $fw-light: 300;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 80px;
     .CTA{
         display: flex;
         align-items: center;
@@ -257,8 +258,9 @@ button{
                 max-width: 171px;
                 margin-top: 9px;
             }
-            p{
+            .contactInfo{
                 line-height: 1.5;
+                font-family: "Helvetica Neue";
             }
         }
         .slogan{
@@ -304,6 +306,7 @@ button{
         }
         .copyright{
             padding-top: 16px;
+            font-family: Times;
         }
     }
 }

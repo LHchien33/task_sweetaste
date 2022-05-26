@@ -59,7 +59,7 @@ table {
 }
 
 body {
-  font-family: "Microsoft JhengHei", "微軟正黑體", serif;
+  font-family: "PingFang TC", "微軟正黑體", serif;
 }
 
 img {
@@ -293,6 +293,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0 80px;
 }
 
 .subscribe .CTA {
@@ -387,8 +388,9 @@ button {
   margin-top: 9px;
 }
 
-.conclusion_top .side p {
+.conclusion_top .side .contactInfo {
   line-height: 1.5;
+  font-family: "Helvetica Neue";
 }
 
 .conclusion_top .slogan {
@@ -449,5 +451,6 @@ button {
 
 .conclusion_bottom .copyright {
   padding-top: 16px;
+  font-family: Times;
 }
 /*# sourceMappingURL=all.css.map */
