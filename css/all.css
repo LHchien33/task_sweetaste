@@ -1,0 +1,453 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Microsoft JhengHei", "微軟正黑體", serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.navbar .logo a {
+  display: block;
+  width: 220px;
+  height: 40px;
+  background-image: url(../images/logo-all-dark.svg);
+  background-repeat: no-repeat;
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.navbar .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .nav a {
+  display: block;
+  padding: 12px 30px 9px 30px;
+  color: #3F5D45;
+  font-weight: 600;
+  border-bottom: 3px solid #fff;
+}
+
+.navbar .nav a:hover {
+  border-bottom: 3px solid #3F5D45;
+}
+
+.navbar .nav .cart {
+  margin-left: 49px;
+  padding: 8px 0 5px;
+}
+
+.banner {
+  margin-bottom: 60px;
+}
+
+.product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.product .side_menu {
+  max-width: 300px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.product .side_menu h2 {
+  background: #3F5D45;
+  color: #EAF0ED;
+  padding: 16px 102px;
+}
+
+.product .side_menu a {
+  display: block;
+  padding: 16px 64px;
+  color: #3F5D45;
+  text-align: center;
+}
+
+.product .side_menu a:hover {
+  background: #EAF0ED;
+}
+
+.product .side_menu .active {
+  background: #EAF0ED;
+}
+
+.product .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 640px;
+}
+
+.product .list_items {
+  margin-bottom: 20px;
+  position: relative;
+  margin-left: 20px;
+}
+
+.product .hot_tag {
+  position: absolute;
+  left: 20px;
+  width: 36px;
+  font-weight: 600;
+  color: #EAF0ED;
+  background: #3F5D45;
+  padding: 10px;
+  line-height: 1.2;
+}
+
+.product .like_btn {
+  position: absolute;
+  top: 19px;
+  right: 22px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.product .items_description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #EAF0ED;
+  color: #3F5D45;
+  font-size: 20px;
+}
+
+.product .items_description h3 {
+  font-weight: 300;
+  padding: 14px 33px;
+  border-right: 1px solid #EAF0ED;
+}
+
+.product .items_description p {
+  font-weight: 600;
+  padding: 14px 20px 14px 25px;
+}
+
+.product .add_to_cart {
+  font-size: 24px;
+  font-weight: 600;
+  color: #3F5D45;
+  background: #EAF0ED;
+  padding: 16px 90px;
+  border: none;
+}
+
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 60px;
+}
+
+.pagination a {
+  display: block;
+  text-align: center;
+  padding: 19px 24px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #3F5D45;
+  border: 1px solid #EAF0ED;
+}
+
+.pagination a:hover {
+  background: #3F5D45;
+  color: #EAF0ED;
+  border: 1px solid #3F5D45;
+}
+
+.pagination .active {
+  background: #3F5D45;
+  color: #EAF0ED;
+  border: 1px solid #3F5D45;
+}
+
+.pagination .arrow {
+  padding: 17px;
+}
+
+.pagination .arrow:hover {
+  background: #EAF0ED;
+  border: 1px solid #EAF0ED;
+}
+
+.bg-primaryColor {
+  background: #3F5D45;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.subscribe {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.subscribe .CTA {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 24px;
+  color: #EAF0ED;
+}
+
+.subscribe .CTA img {
+  width: 40px;
+  margin-right: 20px;
+}
+
+.subscribe .input_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  margin: 30px 0;
+}
+
+.subscribe .input_box .mail {
+  background: #EAF0ED;
+  padding: 16px 20px;
+}
+
+.subscribe .input_box input[type="email"] {
+  border: none;
+  padding: 8px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  font-size: 20px;
+}
+
+.subscribe .input_box input[type="email"]:focus {
+  outline: none;
+}
+
+.subscribe .input_box button[type="submit"] {
+  background: #FFE180;
+  border: none;
+  padding: 28px 32px;
+  background-image: url(../images/arrow_forward-24px.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+button {
+  cursor: pointer;
+}
+
+.bg-secondColor {
+  background: #EAF0ED;
+}
+
+.conclusion {
+  padding: 30px 82px;
+  color: #3F5D45;
+}
+
+.conclusion_top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.conclusion_top .side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.conclusion_top .side a {
+  max-width: 171px;
+  margin-top: 9px;
+}
+
+.conclusion_top .side p {
+  line-height: 1.5;
+}
+
+.conclusion_top .slogan {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: 4px;
+  font-weight: 600;
+  position: relative;
+}
+
+.conclusion_top .slogan span {
+  padding-top: 11px;
+  padding-bottom: 24px;
+}
+
+.conclusion_top .slogan::before {
+  content: "";
+  display: block;
+  border-left: 1px solid #3F5D45;
+  height: 48px;
+  position: absolute;
+  top: 112px;
+  right: 16px;
+}
+
+.conclusion_top .slogan::after {
+  content: "。";
+  display: block;
+  height: 48px;
+  position: absolute;
+  bottom: -24px;
+  left: 0;
+}
+
+.conclusion_bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.conclusion_bottom .fanPage {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.conclusion_bottom .fanPage img {
+  width: 32px;
+  margin-right: 8px;
+}
+
+.conclusion_bottom .copyright {
+  padding-top: 16px;
+}
+/*# sourceMappingURL=all.css.map */
