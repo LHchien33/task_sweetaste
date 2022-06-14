@@ -112,7 +112,7 @@ a {
           align-items: center;
 }
 
-.navbar .nav a {
+.navbar .nav .btn {
   display: block;
   padding: 12px 30px 9px 30px;
   color: #3F5D45;
@@ -120,7 +120,13 @@ a {
   border-bottom: 3px solid #fff;
 }
 
-.navbar .nav a:hover {
+.navbar .nav .btn--active {
+  background: #3F5D45;
+  color: #EAF0ED;
+  border-bottom: 3px solid #3F5D45;
+}
+
+.navbar .nav .btn:hover {
   border-bottom: 3px solid #3F5D45;
 }
 
@@ -157,6 +163,7 @@ a {
   padding: 16px 64px;
   color: #3F5D45;
   text-align: center;
+  border: 1px solid #EAF0ED;
 }
 
 .product .side_menu a:hover {
@@ -200,6 +207,13 @@ a {
   border: none;
   background: none;
   cursor: pointer;
+  padding: 0;
+}
+
+.product .like_btn--active {
+  background-color: #3F5D45;
+  -webkit-mask: url(../images/favorite_full.png);
+          mask: url(../images/favorite_full.png);
 }
 
 .product .items_description {
@@ -229,6 +243,11 @@ a {
   background: #EAF0ED;
   padding: 16px 90px;
   border: none;
+}
+
+.product .add_to_cart:hover {
+  background: #3F5D45;
+  color: #EAF0ED;
 }
 
 .pagination {
@@ -293,6 +312,8 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 0 80px;
 }
 
@@ -339,12 +360,16 @@ a {
 }
 
 .subscribe .input_box button[type="submit"] {
-  background: #FFE180;
+  background-color: #FFE180;
   border: none;
   padding: 28px 32px;
   background-image: url(../images/arrow_forward-24px.png);
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+.subscribe .input_box button[type="submit"]:hover {
+  background-color: #ffc91a;
 }
 
 button {
@@ -391,6 +416,10 @@ button {
 .conclusion_top .side .contactInfo {
   line-height: 1.5;
   font-family: "Helvetica Neue";
+}
+
+.conclusion_top .side .contactInfo a {
+  text-decoration: underline;
 }
 
 .conclusion_top .slogan {

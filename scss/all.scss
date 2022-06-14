@@ -52,12 +52,17 @@ $fw-light: 300;
     .nav{
         display: flex;
         align-items: center;
-        a{
+        .btn{
             display: block;
             padding: 12px 30px 9px 30px;
             color: $primary-color;
             font-weight: $fw-semiBold;
             border-bottom: 3px solid #fff;
+            &--active{
+                background: $primary-color;
+                color: $second-color;
+                border-bottom: 3px solid $primary-color;
+            }
             &:hover{
                 border-bottom: 3px solid $primary-color;
             }
@@ -90,6 +95,7 @@ $fw-light: 300;
             padding: 16px 64px;
             color: $primary-color;
             text-align: center;
+            border: 1px solid $second-color;
             &:hover{
                 background: $second-color;
             }
@@ -126,6 +132,11 @@ $fw-light: 300;
         border: none;
         background: none;
         cursor: pointer;
+        padding: 0;
+        &--active{
+            background-color: $primary-color;
+            mask: url(../images/favorite_full.png);
+        }
     }
     .items_description{
         display: flex;
@@ -149,6 +160,10 @@ $fw-light: 300;
         background: $second-color;
         padding: 16px 90px;
         border: none;
+        &:hover{
+            background: $primary-color;
+            color: $second-color;
+        }
     }
 }
 
@@ -195,6 +210,7 @@ $fw-light: 300;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     padding: 0 80px;
     .CTA{
         display: flex;
@@ -225,12 +241,15 @@ $fw-light: 300;
             }
         }
         button[type="submit"]{
-            background: #FFE180;
+            background-color: #FFE180;
             border: none;
             padding: 28px 32px;
             background-image: url(../images/arrow_forward-24px.png);
             background-repeat: no-repeat;
             background-position: center center;
+            &:hover{
+                background-color: darken(#FFE180, 20%);
+            }
         }
     }
 }
@@ -261,6 +280,9 @@ button{
             .contactInfo{
                 line-height: 1.5;
                 font-family: "Helvetica Neue";
+                a{
+                    text-decoration: underline;
+                }
             }
         }
         .slogan{
